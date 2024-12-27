@@ -6,8 +6,8 @@ import (
 	"os"
 	"testing"
 
-	eigenkms "github.com/Layr-Labs/eigensdk-go/aws/kms"
-	"github.com/Layr-Labs/eigensdk-go/testutils"
+	eigenkms "github.com/arithmic/eigensdk-go/aws/kms"
+	"github.com/arithmic/eigensdk-go/testutils"
 	"github.com/aws/aws-sdk-go-v2/service/kms/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"

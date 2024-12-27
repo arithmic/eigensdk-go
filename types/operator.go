@@ -6,13 +6,13 @@ import (
 	"log/slog"
 	"math/big"
 
-	"github.com/Layr-Labs/eigensdk-go/crypto/bls"
-	"github.com/Layr-Labs/eigensdk-go/utils"
+	"github.com/arithmic/eigensdk-go/crypto/bls"
+	"github.com/arithmic/eigensdk-go/utils"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/math"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	apkreg "github.com/Layr-Labs/eigensdk-go/contracts/bindings/BLSApkRegistry"
+	apkreg "github.com/arithmic/eigensdk-go/contracts/bindings/BLSApkRegistry"
 )
 
 const (

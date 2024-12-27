@@ -4,7 +4,7 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/Layr-Labs/eigensdk-go/logging"
+	"github.com/arithmic/eigensdk-go/logging"
 )
 
 // NewTestLogger is just a utility function to create a logger for testing

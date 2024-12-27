@@ -6,14 +6,14 @@ import (
 	"math/big"
 	"sync"
 
-	blsapkreg "github.com/Layr-Labs/eigensdk-go/contracts/bindings/BLSApkRegistry"
-	regcoord "github.com/Layr-Labs/eigensdk-go/contracts/bindings/RegistryCoordinator"
+	blsapkreg "github.com/arithmic/eigensdk-go/contracts/bindings/BLSApkRegistry"
+	regcoord "github.com/arithmic/eigensdk-go/contracts/bindings/RegistryCoordinator"
 	"github.com/ethereum/go-ethereum/event"
 
-	"github.com/Layr-Labs/eigensdk-go/crypto/bls"
-	"github.com/Layr-Labs/eigensdk-go/logging"
-	"github.com/Layr-Labs/eigensdk-go/types"
-	"github.com/Layr-Labs/eigensdk-go/utils"
+	"github.com/arithmic/eigensdk-go/crypto/bls"
+	"github.com/arithmic/eigensdk-go/logging"
+	"github.com/arithmic/eigensdk-go/types"
+	"github.com/arithmic/eigensdk-go/utils"
 	"github.com/ethereum/go-ethereum/common"
 )
 

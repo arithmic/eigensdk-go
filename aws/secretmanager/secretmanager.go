@@ -3,7 +3,7 @@ package secretmanager
 import (
 	"context"
 
-	"github.com/Layr-Labs/eigensdk-go/utils"
+	"github.com/arithmic/eigensdk-go/utils"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/service/secretsmanager"

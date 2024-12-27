@@ -8,7 +8,7 @@ import (
 	"errors"
 	"math/big"
 
-	eigenkms "github.com/Layr-Labs/eigensdk-go/aws/kms"
+	eigenkms "github.com/arithmic/eigensdk-go/aws/kms"
 	"github.com/aws/aws-sdk-go-v2/service/kms"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"

@@ -1,8 +1,8 @@
 package eigenpod
 
 import (
-	"github.com/Layr-Labs/eigensdk-go/chainio/clients/eigenpod/bindings"
-	"github.com/Layr-Labs/eigensdk-go/chainio/clients/eth"
+	"github.com/arithmic/eigensdk-go/chainio/clients/eigenpod/bindings"
+	"github.com/arithmic/eigensdk-go/chainio/clients/eth"
 
 	"github.com/ethereum/go-ethereum/common"
 )

@@ -1,7 +1,7 @@
 package store
 
 import (
-	"github.com/Layr-Labs/eigensdk-go/crypto/ecdsa"
+	"github.com/arithmic/eigensdk-go/crypto/ecdsa"
 	"github.com/urfave/cli/v2"
 )
 

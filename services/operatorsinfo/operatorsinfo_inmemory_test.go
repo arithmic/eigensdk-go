@@ -12,13 +12,13 @@ import (
 
 	"github.com/ethereum/go-ethereum/event"
 
-	apkregistrybindings "github.com/Layr-Labs/eigensdk-go/contracts/bindings/BLSApkRegistry"
-	blsapkreg "github.com/Layr-Labs/eigensdk-go/contracts/bindings/BLSApkRegistry"
-	regcoord "github.com/Layr-Labs/eigensdk-go/contracts/bindings/RegistryCoordinator"
-	"github.com/Layr-Labs/eigensdk-go/crypto/bls"
-	"github.com/Layr-Labs/eigensdk-go/internal/fakes"
-	"github.com/Layr-Labs/eigensdk-go/logging"
-	"github.com/Layr-Labs/eigensdk-go/types"
+	apkregistrybindings "github.com/arithmic/eigensdk-go/contracts/bindings/BLSApkRegistry"
+	blsapkreg "github.com/arithmic/eigensdk-go/contracts/bindings/BLSApkRegistry"
+	regcoord "github.com/arithmic/eigensdk-go/contracts/bindings/RegistryCoordinator"
+	"github.com/arithmic/eigensdk-go/crypto/bls"
+	"github.com/arithmic/eigensdk-go/internal/fakes"
+	"github.com/arithmic/eigensdk-go/logging"
+	"github.com/arithmic/eigensdk-go/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	gethtypes "github.com/ethereum/go-ethereum/core/types"

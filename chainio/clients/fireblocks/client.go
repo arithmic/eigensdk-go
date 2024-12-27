@@ -13,7 +13,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/Layr-Labs/eigensdk-go/logging"
+	"github.com/arithmic/eigensdk-go/logging"
 	"github.com/golang-jwt/jwt"
 	"github.com/google/uuid"
 )

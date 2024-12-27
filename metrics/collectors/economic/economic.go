@@ -6,9 +6,9 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/Layr-Labs/eigensdk-go/logging"
-	"github.com/Layr-Labs/eigensdk-go/types"
-	"github.com/Layr-Labs/eigensdk-go/utils"
+	"github.com/arithmic/eigensdk-go/logging"
+	"github.com/arithmic/eigensdk-go/types"
+	"github.com/arithmic/eigensdk-go/utils"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/prometheus/client_golang/prometheus"

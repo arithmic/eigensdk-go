@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/Layr-Labs/eigensdk-go/logging"
-	"github.com/Layr-Labs/eigensdk-go/types"
+	"github.com/arithmic/eigensdk-go/logging"
+	"github.com/arithmic/eigensdk-go/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/shurcooL/graphql"
 	"github.com/stretchr/testify/assert"

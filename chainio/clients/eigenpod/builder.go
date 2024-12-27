@@ -1,10 +1,10 @@
 package eigenpod
 
 import (
-	"github.com/Layr-Labs/eigensdk-go/chainio/clients/eth"
-	"github.com/Layr-Labs/eigensdk-go/chainio/txmgr"
-	"github.com/Layr-Labs/eigensdk-go/logging"
-	"github.com/Layr-Labs/eigensdk-go/utils"
+	"github.com/arithmic/eigensdk-go/chainio/clients/eth"
+	"github.com/arithmic/eigensdk-go/chainio/txmgr"
+	"github.com/arithmic/eigensdk-go/logging"
+	"github.com/arithmic/eigensdk-go/utils"
 
 	"github.com/ethereum/go-ethereum/common"
 )

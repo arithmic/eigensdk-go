@@ -4,8 +4,8 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/Layr-Labs/eigensdk-go/crypto/bls"
-	"github.com/Layr-Labs/eigensdk-go/types"
+	"github.com/arithmic/eigensdk-go/crypto/bls"
+	"github.com/arithmic/eigensdk-go/types"
 	"github.com/urfave/cli/v2"
 )
 

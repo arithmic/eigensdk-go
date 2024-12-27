@@ -10,15 +10,15 @@ import (
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/Layr-Labs/eigensdk-go/chainio/clients/eth"
-	apkreg "github.com/Layr-Labs/eigensdk-go/contracts/bindings/BLSApkRegistry"
-	opstateretriever "github.com/Layr-Labs/eigensdk-go/contracts/bindings/OperatorStateRetriever"
-	regcoord "github.com/Layr-Labs/eigensdk-go/contracts/bindings/RegistryCoordinator"
-	stakeregistry "github.com/Layr-Labs/eigensdk-go/contracts/bindings/StakeRegistry"
-	"github.com/Layr-Labs/eigensdk-go/crypto/bls"
-	"github.com/Layr-Labs/eigensdk-go/logging"
-	"github.com/Layr-Labs/eigensdk-go/types"
-	"github.com/Layr-Labs/eigensdk-go/utils"
+	"github.com/arithmic/eigensdk-go/chainio/clients/eth"
+	apkreg "github.com/arithmic/eigensdk-go/contracts/bindings/BLSApkRegistry"
+	opstateretriever "github.com/arithmic/eigensdk-go/contracts/bindings/OperatorStateRetriever"
+	regcoord "github.com/arithmic/eigensdk-go/contracts/bindings/RegistryCoordinator"
+	stakeregistry "github.com/arithmic/eigensdk-go/contracts/bindings/StakeRegistry"
+	"github.com/arithmic/eigensdk-go/crypto/bls"
+	"github.com/arithmic/eigensdk-go/logging"
+	"github.com/arithmic/eigensdk-go/types"
+	"github.com/arithmic/eigensdk-go/utils"
 )
 
 // DefaultQueryBlockRange different node providers have different eth_getLogs range limits.

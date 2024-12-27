@@ -10,17 +10,17 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	gethcommon "github.com/ethereum/go-ethereum/common"
 
-	"github.com/Layr-Labs/eigensdk-go/chainio/clients/eth"
-	delegationmanager "github.com/Layr-Labs/eigensdk-go/contracts/bindings/DelegationManager"
-	avsdirectory "github.com/Layr-Labs/eigensdk-go/contracts/bindings/IAVSDirectory"
-	erc20 "github.com/Layr-Labs/eigensdk-go/contracts/bindings/IERC20"
-	rewardscoordinator "github.com/Layr-Labs/eigensdk-go/contracts/bindings/IRewardsCoordinator"
-	slasher "github.com/Layr-Labs/eigensdk-go/contracts/bindings/ISlasher"
-	strategy "github.com/Layr-Labs/eigensdk-go/contracts/bindings/IStrategy"
-	strategymanager "github.com/Layr-Labs/eigensdk-go/contracts/bindings/StrategyManager"
-	"github.com/Layr-Labs/eigensdk-go/logging"
-	"github.com/Layr-Labs/eigensdk-go/types"
-	"github.com/Layr-Labs/eigensdk-go/utils"
+	"github.com/arithmic/eigensdk-go/chainio/clients/eth"
+	delegationmanager "github.com/arithmic/eigensdk-go/contracts/bindings/DelegationManager"
+	avsdirectory "github.com/arithmic/eigensdk-go/contracts/bindings/IAVSDirectory"
+	erc20 "github.com/arithmic/eigensdk-go/contracts/bindings/IERC20"
+	rewardscoordinator "github.com/arithmic/eigensdk-go/contracts/bindings/IRewardsCoordinator"
+	slasher "github.com/arithmic/eigensdk-go/contracts/bindings/ISlasher"
+	strategy "github.com/arithmic/eigensdk-go/contracts/bindings/IStrategy"
+	strategymanager "github.com/arithmic/eigensdk-go/contracts/bindings/StrategyManager"
+	"github.com/arithmic/eigensdk-go/logging"
+	"github.com/arithmic/eigensdk-go/types"
+	"github.com/arithmic/eigensdk-go/utils"
 )
 
 type Config struct {

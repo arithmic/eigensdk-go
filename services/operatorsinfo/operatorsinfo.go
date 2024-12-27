@@ -3,7 +3,7 @@ package operatorsinfo
 import (
 	"context"
 
-	"github.com/Layr-Labs/eigensdk-go/types"
+	"github.com/arithmic/eigensdk-go/types"
 	"github.com/ethereum/go-ethereum/common"
 )
 

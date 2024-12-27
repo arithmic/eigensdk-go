@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/Layr-Labs/eigensdk-go/testutils"
+	"github.com/arithmic/eigensdk-go/testutils"
 	"github.com/ethereum/go-ethereum/common"
 )
 

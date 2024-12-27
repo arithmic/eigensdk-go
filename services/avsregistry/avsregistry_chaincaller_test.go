@@ -9,10 +9,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/Layr-Labs/eigensdk-go/crypto/bls"
-	"github.com/Layr-Labs/eigensdk-go/internal/fakes"
-	"github.com/Layr-Labs/eigensdk-go/testutils"
-	"github.com/Layr-Labs/eigensdk-go/types"
+	"github.com/arithmic/eigensdk-go/crypto/bls"
+	"github.com/arithmic/eigensdk-go/internal/fakes"
+	"github.com/arithmic/eigensdk-go/testutils"
+	"github.com/arithmic/eigensdk-go/types"
 
 	"github.com/ethereum/go-ethereum/common"
 )

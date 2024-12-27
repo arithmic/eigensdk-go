@@ -1,14 +1,19 @@
 ## egnaddrs
+
 This tool is used to help debug and test eigenlayer/avs deployments and contract setups.
 
 ### How to install
+
 #### Install from repository
+
 ```bash
-go install github.com/Layr-Labs/eigensdk-go/cmd/egnaddrs@latest
+go install github.com/arithmic/eigensdk-go/cmd/egnaddrs@latest
 ```
 
 #### Install from local source
+
 If you have git cloned eigensdk-go to your machine, navigate to [cmd/egnaddrs](.) directory and run
+
 ```bash
 go install
 ```

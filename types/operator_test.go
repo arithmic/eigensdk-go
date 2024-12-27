@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/Layr-Labs/eigensdk-go/utils"
+	"github.com/arithmic/eigensdk-go/utils"
 
 	"github.com/stretchr/testify/assert"
 )

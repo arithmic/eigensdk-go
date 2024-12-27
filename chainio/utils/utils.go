@@ -3,8 +3,8 @@ package utils
 import (
 	"math/big"
 
-	regcoord "github.com/Layr-Labs/eigensdk-go/contracts/bindings/RegistryCoordinator"
-	"github.com/Layr-Labs/eigensdk-go/crypto/bls"
+	regcoord "github.com/arithmic/eigensdk-go/contracts/bindings/RegistryCoordinator"
+	"github.com/arithmic/eigensdk-go/crypto/bls"
 	"github.com/consensys/gnark-crypto/ecc/bn254"
 )
 

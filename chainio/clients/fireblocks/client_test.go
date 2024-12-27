@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Layr-Labs/eigensdk-go/chainio/clients/fireblocks"
-	"github.com/Layr-Labs/eigensdk-go/logging"
+	"github.com/arithmic/eigensdk-go/chainio/clients/fireblocks"
+	"github.com/arithmic/eigensdk-go/logging"
 	"github.com/stretchr/testify/assert"
 )
 

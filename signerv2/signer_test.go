@@ -5,8 +5,8 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/Layr-Labs/eigensdk-go/signerv2"
-	"github.com/Layr-Labs/eigensdk-go/testutils"
+	"github.com/arithmic/eigensdk-go/signerv2"
+	"github.com/arithmic/eigensdk-go/testutils"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"

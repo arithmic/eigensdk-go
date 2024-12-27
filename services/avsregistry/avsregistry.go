@@ -3,8 +3,8 @@ package avsregistry
 import (
 	"context"
 
-	opstateretriever "github.com/Layr-Labs/eigensdk-go/contracts/bindings/OperatorStateRetriever"
-	"github.com/Layr-Labs/eigensdk-go/types"
+	opstateretriever "github.com/arithmic/eigensdk-go/contracts/bindings/OperatorStateRetriever"
+	"github.com/arithmic/eigensdk-go/types"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 )
 

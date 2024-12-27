@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Layr-Labs/eigensdk-go/chainio/clients/eth"
-	rpccalls "github.com/Layr-Labs/eigensdk-go/metrics/collectors/rpc_calls"
-	"github.com/Layr-Labs/eigensdk-go/testutils"
+	"github.com/arithmic/eigensdk-go/chainio/clients/eth"
+	rpccalls "github.com/arithmic/eigensdk-go/metrics/collectors/rpc_calls"
+	"github.com/arithmic/eigensdk-go/testutils"
 	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"

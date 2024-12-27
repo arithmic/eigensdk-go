@@ -6,14 +6,14 @@ import (
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	gethcommon "github.com/ethereum/go-ethereum/common"
 
-	"github.com/Layr-Labs/eigensdk-go/chainio/clients/eth"
-	delegationmanager "github.com/Layr-Labs/eigensdk-go/contracts/bindings/DelegationManager"
-	avsdirectory "github.com/Layr-Labs/eigensdk-go/contracts/bindings/IAVSDirectory"
-	rewardscoordinator "github.com/Layr-Labs/eigensdk-go/contracts/bindings/IRewardsCoordinator"
-	slasher "github.com/Layr-Labs/eigensdk-go/contracts/bindings/ISlasher"
-	strategymanager "github.com/Layr-Labs/eigensdk-go/contracts/bindings/StrategyManager"
-	"github.com/Layr-Labs/eigensdk-go/logging"
-	"github.com/Layr-Labs/eigensdk-go/utils"
+	"github.com/arithmic/eigensdk-go/chainio/clients/eth"
+	delegationmanager "github.com/arithmic/eigensdk-go/contracts/bindings/DelegationManager"
+	avsdirectory "github.com/arithmic/eigensdk-go/contracts/bindings/IAVSDirectory"
+	rewardscoordinator "github.com/arithmic/eigensdk-go/contracts/bindings/IRewardsCoordinator"
+	slasher "github.com/arithmic/eigensdk-go/contracts/bindings/ISlasher"
+	strategymanager "github.com/arithmic/eigensdk-go/contracts/bindings/StrategyManager"
+	"github.com/arithmic/eigensdk-go/logging"
+	"github.com/arithmic/eigensdk-go/utils"
 )
 
 // ContractBindings contains the contract bindings for the EigenLayer Core contracts

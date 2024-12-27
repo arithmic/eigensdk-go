@@ -7,11 +7,11 @@ import (
 	"os"
 	"testing"
 
-	eigenkms "github.com/Layr-Labs/eigensdk-go/aws/kms"
-	"github.com/Layr-Labs/eigensdk-go/chainio/clients/wallet"
-	"github.com/Layr-Labs/eigensdk-go/chainio/txmgr"
-	"github.com/Layr-Labs/eigensdk-go/signerv2"
-	"github.com/Layr-Labs/eigensdk-go/testutils"
+	eigenkms "github.com/arithmic/eigensdk-go/aws/kms"
+	"github.com/arithmic/eigensdk-go/chainio/clients/wallet"
+	"github.com/arithmic/eigensdk-go/chainio/txmgr"
+	"github.com/arithmic/eigensdk-go/signerv2"
+	"github.com/arithmic/eigensdk-go/testutils"
 
 	"github.com/aws/aws-sdk-go-v2/service/kms/types"
 

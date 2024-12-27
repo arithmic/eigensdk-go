@@ -1,10 +1,10 @@
 package avsregistry
 
 import (
-	"github.com/Layr-Labs/eigensdk-go/chainio/clients/elcontracts"
-	"github.com/Layr-Labs/eigensdk-go/chainio/clients/eth"
-	"github.com/Layr-Labs/eigensdk-go/chainio/txmgr"
-	"github.com/Layr-Labs/eigensdk-go/logging"
+	"github.com/arithmic/eigensdk-go/chainio/clients/elcontracts"
+	"github.com/arithmic/eigensdk-go/chainio/clients/eth"
+	"github.com/arithmic/eigensdk-go/chainio/txmgr"
+	"github.com/arithmic/eigensdk-go/logging"
 )
 
 // Build an AVS registry client with the given configuration,

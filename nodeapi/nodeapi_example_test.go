@@ -1,8 +1,8 @@
 package nodeapi_test
 
 import (
-	"github.com/Layr-Labs/eigensdk-go/logging"
-	"github.com/Layr-Labs/eigensdk-go/nodeapi"
+	"github.com/arithmic/eigensdk-go/logging"
+	"github.com/arithmic/eigensdk-go/nodeapi"
 )
 
 func ExampleNodeApi() {

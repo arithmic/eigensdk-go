@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"math/big"
 
-	opstateretriever "github.com/Layr-Labs/eigensdk-go/contracts/bindings/OperatorStateRetriever"
+	opstateretriever "github.com/arithmic/eigensdk-go/contracts/bindings/OperatorStateRetriever"
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/Layr-Labs/eigensdk-go/crypto/bls"
-	"github.com/Layr-Labs/eigensdk-go/logging"
-	opinfoservice "github.com/Layr-Labs/eigensdk-go/services/operatorsinfo"
-	"github.com/Layr-Labs/eigensdk-go/types"
-	"github.com/Layr-Labs/eigensdk-go/utils"
+	"github.com/arithmic/eigensdk-go/crypto/bls"
+	"github.com/arithmic/eigensdk-go/logging"
+	opinfoservice "github.com/arithmic/eigensdk-go/services/operatorsinfo"
+	"github.com/arithmic/eigensdk-go/types"
+	"github.com/arithmic/eigensdk-go/utils"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 )
 

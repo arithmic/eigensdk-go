@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/Layr-Labs/eigensdk-go/crypto/bls"
-	sdkEcdsa "github.com/Layr-Labs/eigensdk-go/crypto/ecdsa"
+	"github.com/arithmic/eigensdk-go/crypto/bls"
+	sdkEcdsa "github.com/arithmic/eigensdk-go/crypto/ecdsa"
 	"github.com/stretchr/testify/assert"
 )
 
