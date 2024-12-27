@@ -58,14 +58,14 @@ func NewBindingsFromConfig(
 			return nil, utils.WrapError("Failed to create DelegationManager contract", err)
 		}
 
-		slasherAddr, err = contractDelegationManager.Slasher(&bind.CallOpts{})
-		if err != nil {
-			return nil, utils.WrapError("Failed to fetch Slasher address", err)
-		}
-		contractSlasher, err = slasher.NewContractISlasher(slasherAddr, client)
-		if err != nil {
-			return nil, utils.WrapError("Failed to fetch Slasher contract", err)
-		}
+		//slasherAddr, err = contractDelegationManager.Slasher(&bind.CallOpts{})
+		//if err != nil {
+		//	return nil, utils.WrapError("Failed to fetch Slasher address", err)
+		//}
+		//contractSlasher, err = slasher.NewContractISlasher(slasherAddr, client)
+		//if err != nil {
+		//	return nil, utils.WrapError("Failed to fetch Slasher contract", err)
+		//}
 
 		strategyManagerAddr, err = contractDelegationManager.StrategyManager(&bind.CallOpts{})
 		if err != nil {
