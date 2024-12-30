@@ -3,7 +3,6 @@ package avsregistry
 import (
 	"context"
 	"crypto/ecdsa"
-	"crypto/rand"
 	"errors"
 	"math/big"
 
@@ -300,6 +299,8 @@ func (w *ChainWriter) RegisterOperator(
 	// TODO(madhur): check to see if we can make the signer and txmgr more flexible so we can use them (and remote
 	// signers) to sign non txs
 	operatorEcdsaPrivateKey *ecdsa.PrivateKey,
+	operatorToAvsRegistrationSigSalt [32]byte,
+	operatorToAvsRegistrationSigExpiry *big.Int,
 	blsKeyPair *bls.KeyPair,
 	quorumNumbers types.QuorumNums,
 	socket string,
@@ -333,26 +334,6 @@ func (w *ChainWriter) RegisterOperator(
 		PubkeyG2:                    G2pubkeyBN254,
 	}
 
-	// generate a random salt and 1 hour expiry for the signature
-	var operatorToAvsRegistrationSigSalt [32]byte
-	_, err = rand.Read(operatorToAvsRegistrationSigSalt[:])
-	if err != nil {
-		return nil, err
-	}
-
-	curBlockNum, err := w.ethClient.BlockNumber(context.Background())
-	if err != nil {
-		return nil, err
-	}
-	curBlock, err := w.ethClient.BlockByNumber(context.Background(), new(big.Int).SetUint64(curBlockNum))
-	if err != nil {
-		return nil, err
-	}
-	sigValidForSeconds := int64(60 * 60) // 1 hour
-	operatorToAvsRegistrationSigExpiry := new(
-		big.Int,
-	).Add(new(big.Int).SetUint64(curBlock.Time()), big.NewInt(sigValidForSeconds))
-
 	// params to register operator in delegation manager's operator-avs mapping
 	msgToSign, err := w.elReader.CalculateOperatorAVSRegistrationDigestHash(
 		ctx,
@@ -379,6 +360,7 @@ func (w *ChainWriter) RegisterOperator(
 	}
 
 	noSendTxOpts, err := w.txMgr.GetNoSendTxOpts()
+	noSendTxOpts.GasLimit = uint64(3_000_000)
 	if err != nil {
 		return nil, err
 	}
