@@ -3,7 +3,9 @@ package avsregistry
 import (
 	"context"
 	"crypto/ecdsa"
+	"encoding/hex"
 	"errors"
+	"fmt"
 	"math/big"
 
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
@@ -366,6 +368,29 @@ func (w *ChainWriter) RegisterOperator(
 	}
 	// TODO: this call will fail if max number of operators are already registered
 	// in that case, need to call churner to kick out another operator. See eigenDA's node/operator.go implementation
+
+	// add debug prints
+	fmt.Println("pubkeyRegParams: ")
+	fmt.Println("pubkey registration signature: ")
+	fmt.Println("registration signature G1 x: ", fmt.Sprintf("0x%s", pubkeyRegParams.PubkeyRegistrationSignature.X.Text(16)))
+	fmt.Println("registration signature G1 y: ", fmt.Sprintf("0x%s", pubkeyRegParams.PubkeyRegistrationSignature.Y.Text(16)))
+
+	fmt.Println("pubkeyG1: ")
+
+	fmt.Println("pubkey G1 x: ", fmt.Sprintf("0x%s", pubkeyRegParams.PubkeyG1.X.Text(16)))
+	fmt.Println("pubkey G1 y: ", fmt.Sprintf("0x%s", pubkeyRegParams.PubkeyG1.Y.Text(16)))
+
+	fmt.Println("pubkeyG1: ")
+	fmt.Println("pubkey G2 x0: ", fmt.Sprintf("0x%s", pubkeyRegParams.PubkeyG2.X[0].Text(16)))
+	fmt.Println("pubkey G2 x1: ", fmt.Sprintf("0x%s", pubkeyRegParams.PubkeyG2.X[1].Text(16)))
+
+	fmt.Println("pubkey G2 y0: ", fmt.Sprintf("0x%s", pubkeyRegParams.PubkeyG2.Y[0].Text(16)))
+	fmt.Println("pubkey G2 y1: ", fmt.Sprintf("0x%s", pubkeyRegParams.PubkeyG2.Y[1].Text(16)))
+
+	fmt.Println("Operator Signature: ", hex.EncodeToString(operatorSignatureWithSaltAndExpiry.Signature))
+	fmt.Println("salt: ", hex.EncodeToString(operatorSignatureWithSaltAndExpiry.Salt[:]))
+	fmt.Println("expiry: ", hex.EncodeToString(operatorSignatureWithSaltAndExpiry.Expiry.Bytes()))
+
 	tx, err := w.registryCoordinator.RegisterOperator(
 		noSendTxOpts,
 		quorumNumbers.UnderlyingType(),
