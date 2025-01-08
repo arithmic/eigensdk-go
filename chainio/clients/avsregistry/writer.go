@@ -323,8 +323,8 @@ func (w *ChainWriter) RegisterOperator(
 	// params to register bls pubkey with bls apk registry
 	g1HashedMsgToSign, err := w.registryCoordinator.PubkeyRegistrationMessageHash(&bind.CallOpts{}, operatorAddr)
 	fmt.Print("g1HashedMsgToSign: ")
-	fmt.Println("registration signature G1 x: ", fmt.Sprintf("0x%s", g1HashedMsgToSign.X.Text(16)))
-	fmt.Println("registration signature G1 y: ", fmt.Sprintf("0x%s", g1HashedMsgToSign.Y.Text(16)))
+	fmt.Println("g1 hashed msg to sign G1 x: ", fmt.Sprintf("0x%s", g1HashedMsgToSign.X.Text(16)))
+	fmt.Println("g1 hashed msg to sign G1 y: ", fmt.Sprintf("0x%s", g1HashedMsgToSign.Y.Text(16)))
 
 	if err != nil {
 		return nil, err
@@ -332,6 +332,16 @@ func (w *ChainWriter) RegisterOperator(
 	signedMsg := chainioutils.ConvertToBN254G1Point(
 		blsKeyPair.SignHashedToCurveMessage(chainioutils.ConvertBn254GethToGnark(g1HashedMsgToSign)).G1Point,
 	)
+
+	var privKeyBigInt *big.Int
+	blsKeyPair.PrivKey.BigInt(privKeyBigInt)
+
+	fmt.Println("private key: ", fmt.Sprintf("0x%s", privKeyBigInt.Text(16)))
+
+	fmt.Println("signed msg: ")
+	fmt.Println("signed msg G1 x: ", fmt.Sprintf("0x%s", signedMsg.X.Text(16)))
+	fmt.Println("signed msg G1 y: ", fmt.Sprintf("0x%s", signedMsg.Y.Text(16)))
+
 	G1pubkeyBN254 := chainioutils.ConvertToBN254G1Point(blsKeyPair.GetPubKeyG1())
 	G2pubkeyBN254 := chainioutils.ConvertToBN254G2Point(blsKeyPair.GetPubKeyG2())
 	pubkeyRegParams := regcoord.IBLSApkRegistryPubkeyRegistrationParams{
