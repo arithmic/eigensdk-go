@@ -333,7 +333,7 @@ func (w *ChainWriter) RegisterOperator(
 		blsKeyPair.SignHashedToCurveMessage(chainioutils.ConvertBn254GethToGnark(g1HashedMsgToSign)).G1Point,
 	)
 
-	var privKeyBigInt *big.Int
+	privKeyBigInt := big.NewInt(0)
 	blsKeyPair.PrivKey.BigInt(privKeyBigInt)
 
 	fmt.Println("private key: ", fmt.Sprintf("0x%s", privKeyBigInt.Text(16)))
